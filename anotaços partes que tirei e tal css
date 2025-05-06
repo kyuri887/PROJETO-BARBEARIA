@@ -1,0 +1,13 @@
+.Sobre {
+  padding: 60px;
+  max-width: 200% ;
+  width: 100%;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-left: 130px;
+}
+
+background-image: url('assets/image 1.png');
+background-size: cover;
+background-position: center;
+

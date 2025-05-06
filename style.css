@@ -1,68 +1,205 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  background-color: #000;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Container principal */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin-left: 200px;
+  padding: 60px;
+  flex-direction: row;
 }
 
 .text-section {
-  max-width: 45%;
+  flex: 1;
+  max-width: 600px;
+  padding-right: 40px;
 }
 
 .text-section h1 {
-  font-size: 48px;
-  letter-spacing: 0.02em;
-  margin-bottom: 30px;
+  font-size: 64px;
+  margin-bottom: 20px;
 }
 
 .OLD {
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 300;
 }
 
 .FELLAS {
-  color: #B47B43; 
+  color: #B47B43;
   font-weight: bold;
   margin-left: 10px;
 }
 
 .welcome {
-  color: #ffff;
-  font-size: 24px;
-  padding-top: 65px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .BemVindo {
   color: #B47B43;
-
 }
 
-p {
-  font-size: 24px;
+.text-section p {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .text-section button {
   background-color: #D9D8D8;
-  padding: 24px 24px;
+  color: #000;
+  padding: 16px 32px;
+  font-size: 28px;
   font-weight: bold;
-  font-size: 24px;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.text-section button:hover {
+  background-color: #B47B43;
+  color: white;
 }
 
 .image-section img {
-  width: 1400px;
-  height: 1300px;
-  max-width: 100%;
+  max-width: 250%;
+  height: auto;
+  border-radius:12px;
+}
+
+/* Sobre */
+.Sobre {
+  padding: 50px;
+  margin-top: 0;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+}
+
+.Sobre h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  flex: 0;
+  min-width: 350px;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  font-size: 24px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #B47B43;
+}
+
+/* Equipe */
+.bloco-equipe {
+  background: rgba(51, 51, 51, 0.9);
+  padding: 16px;               
+  border-radius: 10px;
+  flex: 1;
+  font-size: 24px;             
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 550px;                
+  height: auto;       
+}
+
+.bloco-equipe h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #B47B43;
+}
+
+.bloco-equipe ul {
+
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.bloco-equipe li {
+  margin-bottom: 10px;
+}
+
+/* Serviços */
+.serviços {
+  margin-top: 200px;
+}
+
+.serviços h3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.categorias {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.categoria {
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.categoria h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #B47B43;
+}
+
+.categoria ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.categoria li {
+  margin-bottom: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .text-section {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .cards, .categorias {
+    flex-direction: column;
+  }
 }
