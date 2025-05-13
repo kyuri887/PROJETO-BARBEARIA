@@ -214,6 +214,7 @@ body {
 Toda vez que coloco o @media (max-width entre 600px a 1024 o css quebra*/
 .agendamento{
   display:flex;
+  margin-top: 10%;
   margin-bottom: 50px;
 }
 
