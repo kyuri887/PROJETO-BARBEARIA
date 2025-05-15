@@ -14,17 +14,17 @@ body {
 /* Container principal */
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 60px;
   flex-direction: row;
+  padding-bottom: 200px;
 }
 
 .text-section {
   flex: 1;
   max-width: 600px;
   padding-right: 40px;
-  margin-left: 10%;
 }
 
 .text-section h1 {
@@ -55,6 +55,7 @@ body {
 .text-section p {
   font-size: 36px;
   margin-bottom: 20px;
+  padding-right: 10px;
 }
 
 .text-section button {
@@ -142,8 +143,7 @@ body {
 }
 
 .bloco-equipe ul {
-
-  list-style: disc;
+  list-style: circle;
   padding-left: 20px;
 }
 
@@ -212,26 +212,30 @@ body {
 
 /* nao estou conseguindo deixar o site responsivo em questao de aumentar e diminuir o tamanho a partir desta parte 
 Toda vez que coloco o @media (max-width entre 600px a 1024 o css quebra*/
+
 .agendamento{
   display:flex;
   margin-top: 10%;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 
 .imagem-agendamento {
   width: 388px;
+  min-width: 300px;
   height: auto;
   margin-top: 80px;
-  margin-left: 180px;
+  margin-left: 350px;
   align-items: stretch;
   /*aumentei o tamnha do imagem para ficar do msm tamnho que as informaçoes 
-  os textos aumentao e a imagem fica do msm tamanho*/
+  os textos aumentao e a imagem fica do msm tamanho (resolvi o da imagem :D)*/
 }
 
 .imagem-agendamento img{
   max-width: 100%;
   border-radius: 20px;
+  flex-grow: 1;
+  flex-basis: 200;
 }
 
 .texto-agendamento {
@@ -239,16 +243,18 @@ Toda vez que coloco o @media (max-width entre 600px a 1024 o css quebra*/
   width: 590px;
   height: auto;
   margin-top: 30px;
-  margin-left: 300px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 64px;
 }
 
 .titulo-agendamento {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
+  padding-top: 50px;
   line-height: 1;
  
 }
@@ -274,12 +280,13 @@ Toda vez que coloco o @media (max-width entre 600px a 1024 o css quebra*/
 
 .aviso-agendamento {
   font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .botao-agendamento {
   margin-top: 20px;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   color: black;
   background-color: white;
@@ -300,30 +307,41 @@ Toda vez que coloco o @media (max-width entre 600px a 1024 o css quebra*/
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-/* msm coisa conforme aumenta o zoom da tela os textos sao do card, nao consegui arrumar */
+/* msm coisa conforme aumenta o zoom da tela os textos sai do card, nao consegui arrumar (resolvido Tb :D )*/
 .endereco {
-  border-radius: 30px;
-  background-color:  #272727;
-  padding: 50px;
-  height: 80%;
-  width: 50%;
-
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 20px 20px 20px 20px;
+  border-radius: 12px;
+  flex: 0;
+  min-width: 1000px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  font-size: 24px;
+  margin-top: 500px;
+  margin-bottom: 500px;
 }
 
-.endereco  h3{
+.mapa {
+  width: 950px;
+  height: 550px;
+}
+.endereco h3{
   font-size: 32px;
   margin-bottom: 30px;
+  padding-top: 5px;
 }
 
 .endereco p {
   font-size: 24px;
   margin-bottom: 20px;
-  
 }
 
 .titulo-endereco {
   font-weight: 700;
   font-size: 26px;
+}
+
+.horario {
+  padding-top: 5px;
+  font-size: 24px;
 }
