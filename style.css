@@ -1,0 +1,484 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color:  #b7b5bc;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color:  #b7b5bc;
+}
+
+
+
+/* Container principal */
+.container {
+  display: flex;
+  padding: 60px 5% 200px 5%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text Section */
+.text-section {
+  flex: 1 1 600px;
+  min-width: 300px;
+  max-width: 600px;
+  padding-right: 2.5rem; /* 40px */
+}
+
+.text-section h1 {
+  font-size: 4rem; /* 64px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.OLD {
+  color: #fff;
+  font-weight: 300;
+}
+
+.FELLAS {
+  color: #B47B43;
+  font-weight: bold;
+  margin-left: 0.625rem; /* 10px */
+}
+
+.welcome {
+  font-size: 2.25rem; /* 36px */
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.BemVindo {
+  color: #B47B43;
+}
+.toogle-mode{
+  
+}
+
+.text-section p {
+  font-size: 2.25rem; /* 36px */
+  margin-bottom: 1.25rem; /* 20px */
+  padding-right: 0.625rem; /* 10px */
+}
+
+.text-section button {
+  background-color: #D9D8D8;
+  color: #000;
+  padding: 1rem 2rem; /* 16px 32px */
+  font-size: 1.75rem; /* 28px */
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.text-section button:hover,
+.text-section button:focus {
+  background-color: #B47B43;
+  color: white;
+  outline: 3px solid #B47B43;
+  outline-offset: 2px;
+}
+
+/* Image Section */
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Sobre */
+.Sobre {
+  background-image: url('assets/BB.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3.125rem; /* 50px */
+  margin-top: 0;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+}
+
+.Sobre h2 {
+  font-size: 3rem; /* 48px */
+  margin-bottom: 2.5rem; /* 40px */
+  padding-bottom: 0.625rem; /* 10px */
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 1.25rem; /* 20px */
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem; /* 40px */
+}
+
+.card {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 1.25rem; /* 20px */
+  border-radius: 12px;
+  flex: 0 1 350px;
+  max-width: 550px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  font-size: 1.5rem; /* 24px */
+  gap: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.25rem;
+}
+
+.card h3 {
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 0.625rem; /* 10px */
+  color: #B47B43;
+}
+
+/* Equipe */
+.bloco-equipe {
+  background: rgba(51, 51, 51, 0.9);
+  padding: 1rem 1rem 1rem 1rem; /* 16px */
+  border-radius: 10px;
+  flex: 1 1 200px;
+  font-size: 1.5rem; /* 24px */
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 550px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.25rem;
+}
+
+.bloco-equipe h3 {
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 0.9375rem; /* 15px */
+  color: #B47B43;
+}
+
+.bloco-equipe ul {
+  list-style: circle;
+  padding-left: 1.25rem; /* 20px */
+}
+
+.bloco-equipe li {
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.card:hover,
+.bloco-equipe:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(180, 123, 67, 0.7);
+}
+
+/* Serviços */
+.serviços {
+  margin: 12.5rem 5% 0 5%; /* 200px top */
+}
+
+.serviços h3 {
+  font-size: 3rem; /* 48px */
+  margin-bottom: 1.25rem; /* 20px */
+  text-align: center;
+}
+
+.categorias {
+  display: flex;
+  gap: 1.25rem; /* 20px */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoria {
+  padding: 1.25rem; /* 20px */
+  border-radius: 10px;
+  flex: 1 1 250px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 1.875rem; /* 30px */
+}
+
+.categoria h4 {
+  font-size: 1.375rem; /* 22px */
+  margin-bottom: 0.625rem; /* 10px */
+  color: #B47B43;
+}
+
+.categoria ul {
+  list-style: square;
+  padding-left: 1.25rem; /* 20px */
+}
+
+.categoria li {
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+/* Agendamento */
+.agendamento {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10% 5% 200px 5%;
+  justify-content: center;
+  gap: 2.5rem; /* 40px */
+}
+
+.imagem-agendamento {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 5rem; /* 80px */
+}
+
+.imagem-agendamento img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.texto-agendamento {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1.875rem; /* 30px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem; /* 48px */
+}
+
+.titulo-agendamento {
+  font-size: 2rem; /* 32px */
+  font-weight: bold;
+  margin-bottom: 1.25rem; /* 20px */
+  padding-top: 3.125rem; /* 50px */
+  line-height: 1;
+}
+
+.legenda-agendamento {
+  font-size: 2rem; /* 32px */
+  font-weight: bold;
+  margin-top: 0.625rem; /* 10px */
+  margin-bottom: 0;
+}
+
+.informacao-agendamento {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.aviso-agendamento {
+  font-size: 1.25rem; /* 20px */
+  padding-bottom: 1.875rem; /* 30px */
+}
+
+.botao-agendamento {
+  margin: 1.25rem auto 0 auto;
+  padding: 12px 24px;
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  max-width: 300px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.botao-agendamento:hover,
+.botao-agendamento:focus {
+  background-color: #B47B43;
+  color: white;
+  outline: 3px solid #B47B43;
+  outline-offset: 2px;
+}
+
+/* Contato */
+.contato {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.endereco {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 1.25rem; 
+  border-radius: 12px;
+  flex: 1 1 300px;
+  max-width: 1000px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  font-size: 1.5rem; 
+  margin: 6.25rem auto; 
+}
+
+.mapa {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  min-height: 400px;
+}
+
+.endereco h3 {
+  font-size: 2rem; 
+  margin-bottom: 1.875rem; 
+  padding-top: 5px;
+}
+
+.endereco p {
+  font-size: 1.5rem; 
+  margin-bottom: 1.25rem; 
+}
+
+.titulo-endereco {
+  font-weight: 700;
+  font-size: 1.625rem; 
+}
+
+.horario {
+  padding-top: 5px;
+  font-size: 1.5rem; 
+}
+
+/* Footer */
+footer {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.125rem; /* 50px */
+  padding: 6.25rem 1.25rem 1.25rem 1.25rem; 
+  text-align: center;
+}
+
+.footer-contato,
+.footer-funcionamento,
+.footer-redes-sociais {
+  flex: 1 1 250px;
+  max-width: 350px;
+}
+
+.footer-contato h2,
+.footer-funcionamento h2,
+.footer-redes-sociais h2 {
+  font-size: 1.875rem; /* 30px */
+  margin-bottom: 1.25rem; /* 20px */
+  text-align: left;
+}
+
+.footer-contato ul,
+.footer-funcionamento ul,
+.footer-redes-sociais ul {
+  font-size: 1.5rem; /* 24px */
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-redes-sociais a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.roda-pe {
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem; /* 20px */
+  margin-top: 1.25rem; /* 20px */
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.roda-pe p {
+  margin: 0;
+  font-size: 1rem; /* 16px */
+}
+#btn-black-white {
+  cursor: pointer;
+  padding: 14px 28px;
+  border: none;
+  background-color: #B47B43;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#btn-black-white:hover {
+  background-color: #8a6032;
+}
+
+.black-white {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+section, header, footer, article, aside {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.Sobre { animation-delay: 0.3s; }
+.serviços { animation-delay: 0.6s; }
+.agendamento { animation-delay: 0.9s; }
+.contato { animation-delay: 1.2s; }
+footer { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button, .botao-agendamento {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover, .botao-agendamento:hover {
+  background-color: #222;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.image-section img, .imagem-agendamento img {
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.image-section img:hover, .imagem-agendamento img:hover {
+  transform: scale(1.05);
+}
+
+a, .footer a, .footer li {
+  transition: color 0.3s ease;
+}
+
+a:hover, .footer a:hover {
+  color: #c59d5f;
+}
+
+@media (max-width: 600px) {
+  section, header, footer, article, aside {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
